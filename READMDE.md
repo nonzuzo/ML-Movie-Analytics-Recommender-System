@@ -1,71 +1,76 @@
-Movie Analytics & Recommendation System
-A Netflix-Style Analytics & Recommendation Prototype
-This project is a MovieLens-based analytics and recommender system developed as part of a
-final assessment for a scenario involving a streaming technology company. The system
-delivers business insights and deployable recommendation features using machine learning.
-Project Objectives
-• Analyse large-scale movie ratings and metadata
-• Extract actionable business insights
-• Build and evaluate multiple recommendation models
-• Deploy an interactive analytics and recommendation application
-• Demonstrate business value for content strategy and user retention
-Recommendation Models Implemented
-1. Model
-o Weighted popularity baseline, rigde, logistic regression, random forest, Knn,
-gradient boost, decision tree)
-o Suitable for trending and homepage recommendations
-2. Content-Based Filtering
-o Genre and tag similarity
-o Enhances content discovery
-3. Collaborative Filtering
-o User–user similarity
-o Personalised recommendations
-Application Features
-• Interactive analytics dashboard
-• Movie similarity recommendations
-• User-based recommendations
-• Fixed-size movie cards for consistent UI
-• Graceful handling of missing posters
-Tech Stack
-• Language: Python
-• Framework: Streamlit
-• Libraries:
-✓ Pandas
-✓ NumPy
-✓ Scikit-learn
-✓ Plotly
-Running the Application
-1. Run the App
+# 🎬 Movie Analytics & Recommendation System
+
+A Netflix-style analytics and recommendation system built using the MovieLens dataset.  
+This project was developed as part of a final assessment for a streaming technology company scenario, combining data analysis, machine learning, and deployment using Streamlit.
+
+---
+
+## 📌 Project Overview
+
+This project analyses large-scale movie ratings and metadata to generate actionable insights and build recommendation systems. It demonstrates how machine learning can be applied to real-world streaming platforms for content discovery, personalization, and user engagement.
+
+---
+
+## 🎯 Objectives
+
+- Analyse movie ratings and metadata at scale  
+- Extract actionable business insights  
+- Build and evaluate multiple recommendation models  
+- Deploy an interactive Streamlit application  
+- Demonstrate business value for content strategy and retention  
+
+---
+
+## 🤖 Recommendation Models
+
+### 1. Baseline & Machine Learning Models
+- Weighted popularity baseline  
+- Ridge Regression  
+- Logistic Regression  
+- Lasso Regression  
+- Decision Tree  
+- Random Forest  
+- K-Nearest Neighbours (KNN)  
+- Gradient Boosting  
+
+Used for trending content and general ranking recommendations.
+
+### 2. Content-Based Filtering
+- Uses genre and tag similarity  
+- Recommends movies similar to those a user likes  
+- Helps with discovery for new or inactive users  
+
+### 3. Collaborative Filtering
+- User–user similarity approach  
+- Recommends movies based on similar user preferences  
+- Enables personalised recommendations  
+
+---
+
+## 🖥️ Application Features
+
+- Interactive analytics dashboard (Streamlit)  
+- Movie similarity recommendations  
+- User-based recommendations  
+- Clean, fixed-size movie card UI  
+- Handles missing movie posters gracefully  
+
+---
+
+## 🛠️ Tech Stack
+
+- Python  
+- Streamlit  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Plotly  
+
+---
+
+## 🚀 How to Run
+
+Clone the repository and run the Streamlit app:
+
+```bash
 streamlit run my_app.py
-Project Structure
-├── ml-latest
-├── ml-latest/
-│ ├── movies.csv
-│ ├── ratings.csv
-│ ├── links.csv
-│ ├── genome_tags.csv
-│ ├── genome_scores.csv
-│ └── tags.csv
-├── output/
-│ ├── plots.csv
-│ ├── reports.csv
-│ ├── models.csv
-│ │ ├── baseline_model.pkl, lr.pkl, lasso.pkl, gb.pkl, rf.pkl, dt.pkl, knn.pkl
-├── dashboard/
-│ ├── MovieLens
-_
-Dashboard_Data/
-└── README.md
-Business Value
-• Supports content acquisition decisions
-• Improves user engagement and retention
-• Demonstrates deployable ML for real-world streaming platforms
-Ethical Considerations
-• Anonymised user data
-• Bias-aware popularity scoring
-• Multiple recommendation strategies for fairness
-Future Work
-• Hybrid recommendation engine
-• Real-time user interaction tracking
-• Cloud deployment
-• A/B testing of recommendation strategies
